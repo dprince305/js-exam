@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(199, 69, 69);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        td {
+            padding: 10px;
+            font-size: 25px;
+            
+        }
+        table {
+            margin: 20px 0;
+            width: 600px;
+            
+        }
+
+        input {
+            width: 470px;
+            padding: 10px;
+        }
+
+        label {
+            font-size: 30px;
+        }
+        h1{
+            margin: 30px 0;
+            font-size: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>CRUD</h1>
+    <table border="2" cellspacing="3" cellpadding="3">
+
+        <input type="hidden" id="editno">
+
+        <tr>
+            <td>Name</td>
+            <td><input type="text" id="name" placeholder="Enter Product Name"></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><input type="text" id="price" placeholder="Enter Product Price"></td>
+        </tr>
+        <tr>
+            <td>Quantity</td>
+            <td><input type="number" id="qunatity" placeholder="Enter Product Quantity"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" id="submit" onclick="addData()" value="Insert"></td>
+        </tr>
+    </table>
+
+    <div id="ans"></div>
+
+    <script src="js/crud.js"></script>
+
+</body>
+</html>
